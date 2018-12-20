@@ -1,0 +1,16 @@
+ext.displayName = "Fussball Manager - Http Server"
+
+description = "Very simple HTTP server"
+
+sourceCompatibility = javaVersion
+targetCompatibility = javaVersion
+
+group = "io.codeclubkrk.fm.http"
+
+dependencies {
+
+    // Test dependencies
+    testCompile group: "org.codehaus.groovy", name: "groovy-all", version: "$groovyVersion"
+    testCompile group: "org.spockframework", name: "spock-core", version: "$spockVersion"
+    testCompile group: "org.hamcrest", name: "hamcrest-core", version: "1.3"
+}

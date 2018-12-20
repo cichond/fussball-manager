@@ -1,0 +1,25 @@
+version: 2
+jobs:
+  build:
+
+    working_directory: ~/fussball-manager
+
+    docker:
+      - image: circleci/openjdk:11.0.1-jdk-browsers
+
+    steps:
+
+      - checkout
+
+      - restore_cache: # restore the saved cache after the first run or if `pom.xml` has changed
+          # Read about caching dependencies: https://circleci.com/docs/2.0/caching/
+          key: fussball-manager-{{ checksum "build.gradle" }}
+
+      - run: ./gradlew dependencies
+
+      - save_cache:
+          paths:
+            - ~/.gradle
+          key: fussball-manager-{{ checksum "build.gradle" }}
+
+      - run: ./gradlew build

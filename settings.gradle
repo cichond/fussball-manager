@@ -1,0 +1,5 @@
+rootProject.name = 'fussball-manager'
+
+include 'http-server'
+include 'json-parser'
+include 'repository'

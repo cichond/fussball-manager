@@ -1,0 +1,18 @@
+ext.displayName = "Fussball Manager - Repository"
+
+apply plugin: "groovy"
+
+description = "Custom crafted repository for Fussball Manager purposes"
+
+sourceCompatibility = javaVersion
+targetCompatibility = javaVersion
+
+group = "io.codeclubkrk.fm.repository"
+
+dependencies {
+
+    // Test dependencies
+    testCompile group: "org.codehaus.groovy", name: "groovy-all", version: "$groovyVersion"
+    testCompile group: "org.spockframework", name: "spock-core", version: "$spockVersion"
+    testCompile group: "org.hamcrest", name: "hamcrest-core", version: "1.3"
+}
