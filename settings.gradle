@@ -2,4 +2,5 @@ rootProject.name = 'fussball-manager'
 
 include 'http-server'
 include 'json-parser'
+include 'jwt'
 include 'repository'

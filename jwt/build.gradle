@@ -1,0 +1,18 @@
+ext.displayName = "Fussball Manager - JWT"
+
+description = "JSON Web Token"
+
+sourceCompatibility = javaVersion
+targetCompatibility = javaVersion
+
+group = "io.codeclubkrk.fm.jwt"
+
+dependencies {
+
+    compile 'com.fasterxml.jackson.core:jackson-databind:2.6.3'
+
+    // Test dependencies
+    testCompile group: "org.codehaus.groovy", name: "groovy-all", version: "2.5.4"
+    testCompile group: "org.spockframework", name: "spock-core", version: "1.2-groovy-2.5"
+    testCompile group: "org.hamcrest", name: "hamcrest-core", version: "1.3"
+}
